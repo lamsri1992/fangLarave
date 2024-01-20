@@ -44,6 +44,13 @@ Route::get('/user/create', function () {
     return view('users.register');
 });
 
-Route::get('/department', [dataController::class, 'index'])->name('department');
+Route::get('/department', [dataController::class, 'departmentList'])->name('department');
+Route::post('/department/create', [dataController::class, 'departmentCreate'])->name('department.create');
+Route::get('/department/edit/{id}', [dataController::class, 'departmentEdit'])->name('department.edit');
+Route::post('/department/update/{id}', [dataController::class, 'departmentUpdate'])->name('department.update');
+Route::post('/department/delete', [dataController::class, 'departmentDelete'])->name('department.delete');
 Route::get('/officer', [dataController::class, 'officerList'])->name('officer');
 // php artisan make:controller dataController
+// 1 click open 
+// 2 edit data
+// 3 update data

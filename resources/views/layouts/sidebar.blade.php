@@ -1,8 +1,8 @@
 <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-    <div class="position-sticky pt-3 sidebar-sticky">
+    <div class="position-sticky pt-3 sidebar-sticky" style="padding-top:2rem!important">
         <ul class="nav flex-column">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{{ route('order.all') }}">
+                <a class="nav-link" aria-current="page" href="{{ route('order.all') }}">
                     <span data-feather="home" class="align-text-bottom"></span>
                     Dashboard
                 </a>
